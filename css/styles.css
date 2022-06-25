@@ -261,7 +261,7 @@ textarea {
 footer {
     padding: 50px;
     width: 100%;
-    background-image: url(../images/fondofooter1.png);
+    background-image: url(../images/fotofooter.png);
     background-size: cover;
 } 
 .contenedor__footer {
@@ -270,7 +270,7 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .box__footer {
     display: flex;
@@ -286,26 +286,25 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .box__footer a {
-    color: #7a7a7a;
+    color: #ffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 15px;
 }
 .box__footer a:hover {
-    opacity: 0.8;
+    color: grey;
+    transform: translateY(-10%);
 }
 .footer--logo img {
     width: 250px;
-    animation-name: ondapasar;
-    animation-duration: 5s;
-    position: relative;
+    
     }
 .footer--terms {
     max-width: 350px;
-    color: #7a7a7a;
+    color: rgba(255, 255, 255, 0.853);
     text-align: center;
 }
 .fa-brands {
-    font-size: 20px;
+    font-size: 30px;
 }
 .box__copyright {
     max-width: 1200px;
@@ -317,7 +316,7 @@ footer {
     color: #7a7a7a;
 }
 .box__copyright b {
-    color: blue;
+    color: #ffff;
 }
 
 
