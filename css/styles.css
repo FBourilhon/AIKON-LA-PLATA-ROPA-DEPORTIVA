@@ -16,6 +16,7 @@ header{
     position:sticky;
     top: 0;
     margin-bottom: 10px;
+    z-index: 99;
 }
 .logo{
     height: 100px;
@@ -82,7 +83,7 @@ p {
 .card {
     background-color: rgb(255, 255, 255);
     padding: 50px;    
-    width: 400px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px -12px rgb(37, 37, 245);
     max-width: 1200px;
@@ -102,7 +103,7 @@ p {
 }
 .card__header img  {
     height: 100%;
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 20px ;
     
@@ -137,7 +138,7 @@ p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
 }
 .formulario {
     display: flex;
@@ -360,8 +361,9 @@ footer {
         justify-content: center;
     }
 
+    }
     .tarjetas {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
      .hero {
          width: 100%;
@@ -378,7 +380,7 @@ footer {
         font-size: 20px;
     }
     .galeria {
-        grid-template-columns: 1fr,1fr,1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "a a b"
         "a a b"
@@ -389,9 +391,6 @@ footer {
         ;
         justify-content: center;
     }  
-    .grid {
-        grid-template-columns: 1fr;
-    }
     .mensaje__img {
         display: flex;
         justify-content: center;
@@ -402,5 +401,16 @@ footer {
     .footer--terms  {
         display: none;
     }
-}
+    
+    @media (max-width:576px) {
+        .main_flex {
+            display: flex
+        }
+        .tarjetas {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+
     
