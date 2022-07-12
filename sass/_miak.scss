@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.formulario {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mensaje__img img {
+    width: 400px;
+    height: 550px;
+    border-radius: 5px;
+}
+.form1 {
+    display: block;
+    height: 200px;
+    width: 400px;
+    padding-left: 20px;
+    justify-content: center;
+    align-content: center;
+}
+.form1 label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    display: block;  
+}

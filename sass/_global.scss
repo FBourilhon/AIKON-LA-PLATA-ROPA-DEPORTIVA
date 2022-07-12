@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+a {     
+    color: blue;
+    font-size: 30px;    
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+ul {
+    list-style-type: none; 
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;  
+}

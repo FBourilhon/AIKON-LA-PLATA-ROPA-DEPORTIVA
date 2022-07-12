@@ -1,0 +1,87 @@
+/* HERO */
+
+
+.hero1 {
+    background-image: url(../images/hero1.png);
+    height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero1__title {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 4rem;
+    padding-left: 15px;
+}
+.hero1__subtitle {
+    line-height: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgba(137, 250, 182, 0.743);
+    font-size: 40px;
+    margin-top: 50px;
+}
+p {
+    line-height: 1.5;
+}
+
+/* TARJETAS */
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+
+.card {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;    
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -12px rgb(37, 37, 245);
+    margin: 0;
+    overflow:hidden;
+    cursor: pointer;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 15px 15px 25px -12px rgb(37, 37, 245);
+    transform: translateY(-2%);
+    transition: .3s;
+}
+.card:active {
+    transform: scale(1);
+}
+.card__header{
+    position: relative;
+   
+}
+.card__header img  {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+    
+}
+.card__header small {
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: blue;
+    font-weight: bold;
+    padding: 8px;
+    position: absolute;
+    right: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.card h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.card a {
+    display: inline-block;
+    margin-top: 20px;
+}
+.card a:hover {
+    background: blue;
+    color: white;
+}
