@@ -21,9 +21,9 @@
     padding-left: 20px;
     justify-content: center;
     align-content: center;
-}
-.form1 label {
-    font-family: 'Roboto Mono', monospace;
-    font-size: large;
-    display: block;  
+    & label {
+        font-family: 'Roboto Mono', monospace;
+        font-size: large;
+        display: block;  
+    }
 }

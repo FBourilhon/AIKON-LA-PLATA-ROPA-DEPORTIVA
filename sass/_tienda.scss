@@ -15,56 +15,67 @@ main {
     "e e h g"
     ;
     gap: 0.8rem;
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__picture {
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "TIENDA";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:rgba(137, 250, 182, 0.743);
+            transform: translate(100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            font-size: 40px;
+        }
+        &:hover::before {
+            transform: translate(0%) ;
+            transition: .5s;
+        }
+        &--g1 {
+            grid-area: a;
+        }
+        &--g2 {
+            grid-area: b;
+        }
+        &--g3 {
+            grid-area: c;
+        }
+        &--g4 {
+            grid-area: d;
+        }
+        &--g5 {
+            grid-area: e;
+        }
+        &--g6 {
+            grid-area: f;
+        }
+        &--g7 {
+            grid-area: g;
+        }
+        &--g8 {
+            grid-area: h;
+        }
+    }
 }
-.galeria__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.galeria__picture {
-    position: relative;
-    overflow: hidden;
-}
-.galeria__picture::before {
-    content: "TIENDA";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:rgba(137, 250, 182, 0.743);
-    transform: translate(100%);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-size: 40px;
-}
-.galeria__picture:hover::before {
-    transform: translate(0%) ;
-    transition: .5s;
-}
-.galeria__picture--g1 {
-    grid-area: a;
-}
-.galeria__picture--g2 {
-    grid-area: b;
-}
-.galeria__picture--g3 {
-    grid-area: c;
-}
-.galeria__picture--g4 {
-    grid-area: d;
-}
-.galeria__picture--g5 {
-    grid-area: e;
-}
-.galeria__picture--g6 {
-    grid-area: f;
-}
-.galeria__picture--g7 {
-    grid-area: g;
-}
-.galeria__picture--g8 {
-    grid-area: h;
-}
+
+
+
+
+
+
+
+
+
+
+
