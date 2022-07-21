@@ -63,20 +63,20 @@ footer {
   flex-direction: column;
   padding: 20px;
   align-items: center; }
-  .box__footer h2 {
+  .box__footer h4 {
     margin-bottom: 65px;
-    color: #343434;
+    color: black;
     font-size: 40px;
     font-weight: 100px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .box__footer a {
-    color: #343434;
+    color: rgba(137, 250, 182, 0.743);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 15px;
     font-size: 20px; }
   .box__footer a:hover {
-    color: grey;
+    color: rgba(137, 250, 182, 0.743);
     transform: translateY(-10%); }
 
 .footer--logo img {
@@ -84,12 +84,14 @@ footer {
 
 .footer--terms {
   max-width: 350px;
-  color: #7a7a7a;
+  color: rgba(137, 250, 182, 0.743);
   text-align: center; }
 
 .fa-brands {
   font-size: 30px;
-  color: #343434; }
+  color: rgba(137, 250, 182, 0.743); }
+  .fa-brands:hover {
+    color: white; }
 
 .box__copyright {
   max-width: 1200px;
@@ -97,7 +99,7 @@ footer {
   text-align: center;
   margin-top: 20px; }
   .box__copyright p {
-    color: #7a7a7a; }
+    color: rgba(137, 250, 182, 0.743); }
   .box__copyright b {
     color: #ffff; }
 
@@ -117,12 +119,14 @@ footer {
     font-family: 'Kdam Thmor Pro', sans-serif;
     color: rgba(137, 250, 182, 0.743);
     font-size: 40px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    text-align: center; }
 
 /* TARJETAS */
 .tarjetas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px; }
 
 .card {
   background-color: white;
@@ -153,7 +157,7 @@ footer {
   .card__header {
     position: relative; }
     .card__header img {
-      height: 100%;
+      height: 100px;
       width: 100%;
       border-radius: 10px;
       margin-bottom: 20px; }
@@ -178,15 +182,12 @@ footer {
   margin-top: 30px; }
 
 .mensaje__img img {
-  width: 400px;
-  height: 550px;
+  max-width: 400px;
   border-radius: 5px; }
 
 .form1 {
   display: block;
-  height: 200px;
-  width: 400px;
-  padding-left: 20px;
+  max-width: 400px;
   justify-content: center;
   align-content: center; }
   .form1 label {
@@ -246,6 +247,10 @@ main {
     .galeria__picture--g8 {
       grid-area: h; }
 
+.mod {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 #formularios {
   background-image: url(../images/contacto1.jpg);
   background-attachment: fixed;
@@ -260,7 +265,7 @@ form {
   box-sizing: border-box;
   border-radius: 5px; }
 
-h2 {
+.h1contacto {
   color: blue;
   font-size: 60px;
   text-align: center;
@@ -295,7 +300,9 @@ textarea {
   header {
     justify-content: center; }
   .tarjetas {
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+    gap: 10px; }
   .hero {
     width: 100%; }
   .hero1__title {
@@ -322,12 +329,21 @@ textarea {
 @media (max-width: 620px) {
   header {
     margin-top: 10px; }
-  .navbar ul {
-    display: inline-block;
-    padding-top: 5px;
-    justify-content: right; }
+  .navbar {
+    display: flex;
+    justify-content: center; }
+    .navbar ul {
+      display: inline-block;
+      padding-top: 5px;
+      justify-content: right; }
+  .hero1__subtitle {
+    text-align: center; }
   .tarjetas {
     grid-template-columns: 1fr; }
   .flex__tarjetas {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .olvidepass {
+    font-size: 20px; }
+  .h1contacto {
+    font-size: 30px; } }

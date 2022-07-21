@@ -10,15 +10,12 @@
 }
 
 .mensaje__img img {
-    width: 400px;
-    height: 550px;
+    max-width: $maxwidth4;
     border-radius: 5px;
 }
 .form1 {
     display: block;
-    height: 200px;
-    width: 400px;
-    padding-left: 20px;
+    max-width: $maxwidth4;
     justify-content: center;
     align-content: center;
     & label {

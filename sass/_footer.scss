@@ -3,7 +3,9 @@ footer {
     width: 100%;
     background-image: url(../images/fotofooter.png);
     background-size: cover;
+   
 } 
+
 .contenedor__footer {
     display: flex;
     flex-wrap: wrap;
@@ -17,40 +19,40 @@ footer {
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    & h2 {
+    & h4 {
         margin-bottom: 65px;
-        color: #343434;
+        color: $fuentefooter3;
         font-size: 40px;
         font-weight: 100px;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     & a {
-        color: #343434;
+        color: $fuentefooter;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 15px;
         font-size: 20px;
     }
     & a:hover {
-        color: grey;
+        color: $fuentefooter    ;
         transform: translateY(-10%);
     }
 }
-
-
-
 .footer--logo img {
     width: 250px;
     
     }
 .footer--terms {
     max-width: 350px;
-    color: #7a7a7a;
+    color: $fuentefooter;
     text-align: center;
 }
 .fa-brands {
     font-size: 30px;
-    color: #343434;
+    color: $fuentefooter;
+    &:hover {
+    color: white;
+    }
 }
 .box__copyright {
     max-width: 1200px;
@@ -58,10 +60,10 @@ footer {
     text-align: center;
     margin-top: 20px;
     & p {
-        color: #7a7a7a;
+        color: $fuentefooter;
     }
     & b {
-        color: #ffff;
+        color: $fuentefooter2;
     }
 }
 
