@@ -27,7 +27,7 @@ footer {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     & a {
-        color: $fuentefooter3;
+        /* color: $fuentefooter3; */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 15px;
         font-size: 20px;
@@ -39,7 +39,6 @@ footer {
 }
 .footer--logo img {
     width: 250px;
-
     }
 .footer--terms {
     max-width: 350px;
@@ -66,3 +65,14 @@ footer {
         color: $fuentefooter2;
     }
 }
+$footerindex: (
+    remeras: $fuentefooter,
+    calzas: $fuentefooter2,
+    buzos: $fuentefooter3,
+);
+@each $nombre, $color in $footerindex {
+    .link-#{$nombre} {
+        color: $color;
+    }
+}
+
