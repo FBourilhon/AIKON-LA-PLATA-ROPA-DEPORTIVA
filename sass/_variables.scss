@@ -3,3 +3,36 @@ $fuentefooter2: #ffff;
 $fuentefooter3: black;
 $maxwidth4: 400px;
 $height100: 100px;
+
+/* HERO */
+
+$backattach: fixed;
+$backsize: cover;
+$heighvp: 70vh;
+/* HERO TITLE */
+
+$blanco: white;
+$fuentetipo: 'Kdam Thmor Pro', sans-serif;
+$fuentezise: 4rem;
+$padizq: 15px;
+
+/*  MIXINS */
+
+@mixin hero__title {
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 4rem;
+    padding-left: 15px;
+}
+@mixin hero__subtitle {
+    line-height: 50px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgba(0, 255, 102, 0.743);
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+    }        
+
+  /*   MAPS */
+
+  

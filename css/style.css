@@ -1,3 +1,7 @@
+/* HERO */
+/* HERO TITLE */
+/*  MIXINS */
+/*   MAPS */
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
@@ -71,7 +75,7 @@ footer {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .box__footer a {
-    color: rgba(137, 250, 182, 0.743);
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 15px;
     font-size: 20px; }
@@ -84,12 +88,13 @@ footer {
 
 .footer--terms {
   max-width: 350px;
-  color: rgba(137, 250, 182, 0.743);
-  text-align: center; }
+  color: black;
+  text-align: center;
+  margin-top: 10px; }
 
 .fa-brands {
   font-size: 30px;
-  color: rgba(137, 250, 182, 0.743); }
+  color: black; }
   .fa-brands:hover {
     color: white; }
 
@@ -109,15 +114,15 @@ footer {
   height: 70vh;
   background-size: cover;
   background-attachment: fixed; }
-  .hero1__title {
+  .hero1__title, .hero1__nos--title {
     color: white;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 4rem;
     padding-left: 15px; }
-  .hero1__subtitle {
+  .hero1__subtitle, .hero1__nos--subtitle {
     line-height: 50px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    color: rgba(137, 250, 182, 0.743);
+    color: rgba(0, 255, 102, 0.743);
     font-size: 40px;
     margin-top: 50px;
     text-align: center; }
@@ -143,8 +148,7 @@ footer {
     text-align: center;
     margin-bottom: 5px; }
   .card a {
-    display: inline-block;
-    margin-top: 20px; }
+    display: inline-block; }
     .card a:hover {
       background: blue;
       color: white; }
@@ -157,7 +161,7 @@ footer {
   .card__header {
     position: relative; }
     .card__header img {
-      height: 100px;
+      height: 100%;
       width: 100%;
       border-radius: 10px;
       margin-bottom: 20px; }
@@ -305,10 +309,15 @@ textarea {
     gap: 10px; }
   .hero {
     width: 100%; }
-  .hero1__title {
+  .hero1__title, .hero1__nos--title {
     font-size: 3rem;
     text-align: center; }
-  .hero1__subtitle {
+  .hero1__subtitle, .hero1__nos--subtitle {
+    font-size: 30px; }
+  .hero1__nos h1 {
+    font-size: 3rem;
+    text-align: center; }
+  .hero1__nos h2 {
     font-size: 30px; }
   .galeria__picture::before {
     font-size: 20px; }
@@ -324,7 +333,12 @@ textarea {
   .contenedor__footer {
     justify-content: center; }
   .footer--terms {
-    display: none; } }
+    display: none; }
+  .hero1__nos--title {
+    font-size: 3rem;
+    text-align: center; }
+  .hero1__nos--subtitle {
+    font-size: 30px; } }
 
 @media (max-width: 620px) {
   header {
@@ -336,14 +350,27 @@ textarea {
       display: inline-block;
       padding-top: 5px;
       justify-content: right; }
-  .hero1__subtitle {
+  .hero1__subtitle, .hero1__nos--subtitle {
     text-align: center; }
+  .hero1__nos h2 {
+    font-size: 25px; }
   .tarjetas {
     grid-template-columns: 1fr; }
-  .flex__tarjetas {
+  .main_flex {
     display: flex;
     justify-content: center; }
   .olvidepass {
     font-size: 20px; }
   .h1contacto {
     font-size: 30px; } }
+
+/* HERO 2  */
+.hero1__nos {
+  background-image: url(../images/banner2.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.card__lik {
+  display: flex;
+  justify-content: center; }

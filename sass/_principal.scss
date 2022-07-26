@@ -1,27 +1,17 @@
 /* HERO */
 
-
 .hero1 {
     background-image: url(../images/hero1.png);
     height: 70vh;
     background-size: cover;
     background-attachment: fixed;
-
     &__title {
-        color: white;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        font-size: 4rem;
-        padding-left: 15px;
+        @include hero__title ;
      }
      &__subtitle {
-        line-height: 50px;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        color: rgba(137, 250, 182, 0.743);
-        font-size: 40px;
-        margin-top: 50px;
-        text-align: center;
+        @include hero__subtitle
      }
-    }
+}
     
 
 /* TARJETAS */
@@ -49,7 +39,6 @@
     }
     & a {
         display: inline-block;
-        margin-top: 20px;
         &:hover {
             background: blue;
             color: white;
@@ -66,7 +55,7 @@
     &__header{
             position: relative; 
             & img  {
-                height: 100px;
+                height: 100%;
                 width: 100%;
                 border-radius: 10px;
                 margin-bottom: 20px ;  

@@ -25,6 +25,13 @@
      .hero1__subtitle {
          font-size: 30px;
      }
+     .hero1__nos h1 {
+        font-size: 3rem;
+        text-align: center;
+     }
+    .hero1__nos h2 {
+            font-size: 30px;
+        }
 
     .galeria__picture::before {
         font-size: 20px;
@@ -54,6 +61,13 @@
     .footer--terms  {
         display: none;
     }
+    .hero1__nos--title {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .hero1__nos--subtitle {
+        font-size: 30px;
+    }
 }
     
 @media (max-width:620px) {
@@ -72,10 +86,13 @@
     .hero1__subtitle {
         text-align: center;
     }
+    .hero1__nos h2 {
+        font-size: 25px;
+    }
     .tarjetas {
         grid-template-columns: 1fr;
     }
-    .flex__tarjetas {
+    .main_flex{
         display: flex;
         justify-content: center;
     }
@@ -85,4 +102,5 @@
     .h1contacto {
         font-size: 30px;
     }
+    
 }

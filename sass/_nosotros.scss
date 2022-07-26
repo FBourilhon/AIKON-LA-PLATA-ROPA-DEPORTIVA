@@ -1,0 +1,18 @@
+/* HERO 2  */
+
+.hero1__nos {
+    background-image: url(../images/banner2.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+    &--title {
+        @extend .hero1__title
+    }   
+    &--subtitle {
+        @extend .hero1__subtitle
+    }
+}
+.card__lik{
+    display: flex;
+    justify-content: center;
+}
