@@ -71,6 +71,9 @@
 }
     
 @media (max-width:620px) {
+    .logo {
+        display: inline;
+    }
     header {
         margin-top: 10px;
     }
@@ -101,6 +104,12 @@
     } 
     .h1contacto {
         font-size: 30px;
+    }
+    .form1 a {
+        display: block;
+    }
+    .mensaje__img {
+        max-width: 100%;
     }
     
 }

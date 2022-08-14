@@ -6,10 +6,10 @@
     background-size: cover;
     background-attachment: fixed;
     &__title {
-        @include hero__title ;
+        @include hero__title;
      }
      &__subtitle {
-        @include hero__subtitle
+        @include hero__subtitle;
      }
 }
     

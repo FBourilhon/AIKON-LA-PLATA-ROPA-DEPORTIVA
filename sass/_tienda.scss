@@ -1,6 +1,13 @@
 main {
     box-sizing: border-box;
 }   
+.main__title {
+    color: blue;
+    text-align: center;
+}
+.tienda2__title {
+    @extend .main__title;
+}
 .galeria {
     padding-bottom: 3em;
     padding-top: 1em;

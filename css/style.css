@@ -103,7 +103,7 @@ footer {
   margin: auto;
   text-align: center;
   margin-top: 20px; }
-  .box__copyright p {
+  .box__copyright h3 {
     color: rgba(137, 250, 182, 0.743); }
   .box__copyright b {
     color: #ffff; }
@@ -198,9 +198,19 @@ footer {
     font-family: 'Roboto Mono', monospace;
     font-size: large;
     display: block; }
+  .form1 a {
+    display: block; }
+
+.olvidepass {
+  margin-top: 10px;
+  font-size: 20px; }
 
 main {
   box-sizing: border-box; }
+
+.main__title, .tienda2__title {
+  color: blue;
+  text-align: center; }
 
 .galeria {
   padding-bottom: 3em;
@@ -292,9 +302,19 @@ textarea {
   color: white;
   height: 40px;
   font-size: 20px; }
+  #enviar:hover {
+    cursor: pointer; }
 
-#enviar:hover {
-  cursor: pointer; }
+/* HERO 2  */
+.hero1__nos {
+  background-image: url(../images/banner2.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.card__lik {
+  display: flex;
+  justify-content: center; }
 
 @media (max-width: 873px) {
   .logo {
@@ -341,6 +361,8 @@ textarea {
     font-size: 30px; } }
 
 @media (max-width: 620px) {
+  .logo {
+    display: inline; }
   header {
     margin-top: 10px; }
   .navbar {
@@ -362,15 +384,8 @@ textarea {
   .olvidepass {
     font-size: 20px; }
   .h1contacto {
-    font-size: 30px; } }
-
-/* HERO 2  */
-.hero1__nos {
-  background-image: url(../images/banner2.jpg);
-  height: 70vh;
-  background-size: cover;
-  background-attachment: fixed; }
-
-.card__lik {
-  display: flex;
-  justify-content: center; }
+    font-size: 30px; }
+  .form1 a {
+    display: block; }
+  .mensaje__img {
+    max-width: 100%; } }

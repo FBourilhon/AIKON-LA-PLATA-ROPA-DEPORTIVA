@@ -6,10 +6,10 @@
     background-size: cover;
     background-attachment: fixed;
     &--title {
-        @extend .hero1__title
+        @extend .hero1__title;
     }   
     &--subtitle {
-        @extend .hero1__subtitle
+        @extend .hero1__subtitle;
     }
 }
 .card__lik{
